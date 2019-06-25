@@ -72,12 +72,12 @@ public class RNKakaoLoginsModule extends ReactContextBaseJavaModule implements A
 
   private List<AuthType> getAuthTypes() {
     final List<AuthType> availableAuthTypes = new ArrayList<>();
-    if (Session.getCurrentSession().getAuthCodeManager().isTalkLoginAvailable()) {
-      availableAuthTypes.add(AuthType.KAKAO_TALK);
-    }
-    if (Session.getCurrentSession().getAuthCodeManager().isStoryLoginAvailable()) {
-      availableAuthTypes.add(AuthType.KAKAO_STORY);
-    }
+    //if (Session.getCurrentSession().getAuthCodeManager().isTalkLoginAvailable()) {
+    //availableAuthTypes.add(AuthType.KAKAO_TALK);
+    //}
+    //if (Session.getCurrentSession().getAuthCodeManager().isStoryLoginAvailable()) {
+    //availableAuthTypes.add(AuthType.KAKAO_STORY);
+    //}
     availableAuthTypes.add(AuthType.KAKAO_ACCOUNT);
 
     AuthType[] authTypes = KakaoSDK.getAdapter().getSessionConfig().getAuthTypes();
